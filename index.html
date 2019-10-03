@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>terminal.js test</title>
+		<script src="./js/terminal.js"></script>
+
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-10">
+					<h1>Cryptology Calculator</h1>
+					<br />
+					<br /><br />
+
+					<div class="row">
+						<div class="col-3">
+							<ul id="test"></ul>
+						</div>
+						<div class="col-7">
+							All calculations done in Z mod
+
+							<input id="inputN" value="26" type="number" size="6" required />
+							<br /><br />
+
+
+
+							<div id="terminal-wrapper">
+								<div id="terminal-toolbar">
+									<button id="clearButton">Clear</button>
+									<button id="helpButton">Help</button>
+								</div>
+								<div id="terminal"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<br />
+					<table>
+						<thead>
+							<tr>
+								<th>x</th>
+
+								<th>x<sup>-1</sup></th>
+							</tr>
+						</thead>
+						<tbody id="inverseTableBody"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<style>
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+		}
+		td,
+		th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		li:first-child {
+			font-weight: bold;
+		}
+
+		li {
+			white-space: pre;
+		}
+
+		html,
+		body {
+			width: 100%;
+		}
+	</style>
+
+	<script src="./js/main.js"></script>
+</html>
