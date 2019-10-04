@@ -20,7 +20,7 @@ document.getElementById("helpButton").addEventListener("click", () => {
 
 function addCalculationToList(input, output, attributes = []) {
 	let list = document.getElementById("test");
-	let listItem = document.createElement("li");
+	let listItem = document.createElement("div");
 	input = input.trim();
 	let padString = "";
 	console.log(input.length);
